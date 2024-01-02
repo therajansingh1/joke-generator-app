@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+main{
+width: 100%;
+height: 100vh;
+background-color: var(--DarkBlue);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.container{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 1rem;
+    position: relative;
+}
+.container p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--NeonGreen);
+}
+.container h3{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--LightCyan);
+}
+.container .pattern{
+    margin-top: 20px;
+    width: 100%;
+}
+button{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    border: 0;
+    position: absolute;
+    bottom: -40px;
+    right: 42%;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 0px 30px var(--LightCyan);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:525px){
+    .container{
+        width: 90%;
+        margin: auto;
+        height: 400px;
+    }
+    button{
+        position: absolute;
+        bottom: -40px;
+        right: 40%;
+    }
+}
+@media (max-width:325px){
+    .container{
+        width: 90%;
+        margin: auto;
+        height: 400px;
+    }
+}
